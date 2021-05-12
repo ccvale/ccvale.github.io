@@ -1,0 +1,39 @@
+body {
+    background: #111011;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: pink;
+}
+header {
+    background-color: #007FFF;
+    padding: 20px;
+}
+section {
+    background-color: white;
+    color: #111011;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+div {
+    background-color: pink;
+    width: 100px;
+    margin: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+footer {
+    background: #007FFF;
+    padding: 10px 20px;
+}

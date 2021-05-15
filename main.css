@@ -1,5 +1,5 @@
 body {
-    background: #111011;
+    background: white;
     color: white;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -8,7 +8,6 @@ body {
 
 
 header {
-    background-color: #858eff;
     background-image: url('images/binary.gif');
     background-size: 100%;
     background-position: center;
@@ -22,6 +21,9 @@ header a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+}
+header a:hover {
+    color: pink;
 }
 
 header .logo a {
@@ -70,9 +72,10 @@ nav li {
 
 
 footer {
-    background: pink;
-    color: #111011;
+    background: #111011;
+    color: white;
     font-size: 12px;
     padding: 20px 20px;
     text-align: center;
 }
+

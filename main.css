@@ -6,6 +6,11 @@ body {
     padding: 0;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header {
     background-image: url('images/header.gif');
     background-size: 100%;
@@ -47,6 +52,7 @@ header .logo a {
     width: 90px;
 }
 
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -67,21 +73,27 @@ p {
     color: whitesmoke;
 }
 
+
+
 div ul li {
     color: #DF8598;
 }
 
-.verticalLine {
+/*.verticalLine {
     border-right: thick solid #DF8598;
     margin-right: 750px;
-  }
+    height: 500px;
+    top: -300px;
+  } */
 
   .toLearn {
     color: white;
     position: relative;
     right: -750px;
-    top: -245px;
+    top: -240px;
 }
+
+
 
 .features {
     background-color:#DF8598; /* change color */
@@ -117,6 +129,14 @@ footer {
     font-size: 12px;
     padding: 20px 20px;
     text-align: center;
+}
+
+#footerText {
+    text-align: center;
+    font-size: 10px;
+    padding: 0;
+    margin-top: 3px;
+    margin-bottom: -15px;
 }
 
 .socials a img {

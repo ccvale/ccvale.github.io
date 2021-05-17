@@ -1,0 +1,14 @@
+Before quarantine started, I chose to major in Computer Science, but I didn't have an extremely strong background in programming at the time.
+In the time since, I've dedicated a lot of my time to learning Python, which is currently my language of choice. Though I've handled other languages in school,
+and through personal curiosity, I feel comfortable saying that I'm fluent in Python. 
+I've spent a lot of time working on different small projects in order to practice my skills, and will showcase some of those here.
+
+My favorite project is babyGENIUS,
+which was inspired the 'Genius' app (pretty much a lyrics database). The app had a feature that it retired a couple years ago which detected if you were listening to
+music on your phone, and brought you a page with lyrics of that song. Since I often find myself looking for song lyrics, I wanted to recreate that feature for my desktop.
+The program detects if the user is listening to a song on Spotify. It will tell you what song you're listening to, and can get you the lyrics to that song.
+You can also use it to search for a song, and it will give those lyrics as well. I also have the program set up to search for the album artwork of the song
+in question, and if you have HUE lights set up, the lights will change to a color palatte matching the artwork. The code is a bit messy, and it doesn't work 100% perfectly,
+but I'm particularly proud of this program.
+
+

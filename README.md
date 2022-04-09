@@ -1,7 +1,7 @@
 # cval.io (WIP)
 
 ## What is it?
-- `cval.io` is my first foray into the "personal project via the means of a resume/portfolio site" space
+- [cval.io](https://cval.io) is my first foray into the "personal project via the means of a resume/portfolio site" space
 
 - first time truly working with the simple JS/CSS/HTML combination to create an animated webpage
 

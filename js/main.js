@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     'L', 'E', 'A', 'D', 'E', 'R',
                     'T', 'E', 'C', 'H', 'I', 'E',
                     'W', 'R', 'I', 'T', 'E', 'R',
-                    'S', 'P', 'O', 'R', 'T', 'S',
+                    'A', 'C', 'T', 'I', 'V', 'E',
                     'D', 'R', 'I', 'V', 'E', 'N',
                     'H', 'I', 'R', 'E', 'D', '✓'
                     ]

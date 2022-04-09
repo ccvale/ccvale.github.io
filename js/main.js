@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function createSquares() {
         let chars = [
                     'L', 'E', 'A', 'D', 'E', 'R',
-                    'T', 'E', 'C', 'H', 'I', 'E',
-                    'W', 'R', 'I', 'T', 'E', 'R',
                     'A', 'C', 'T', 'I', 'V', 'E',
                     'D', 'R', 'I', 'V', 'E', 'N',
+                    'T', 'E', 'C', 'H', 'I', 'E',
+                    'W', 'R', 'I', 'T', 'E', 'R',
                     'H', 'I', 'R', 'E', 'D', '✓'
                     ]
         const gameBoard = document.getElementById('board');
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 square.textContent = chars[index];
                 square.classList.add('animate__flipInX');
                 square.style = `background-color:${tileColor};border-color:${tileColor}`;
-            }, 200 * index + 400);
+            }, 200 * index + 300);
         }
     }
 });

@@ -1,8 +1,0 @@
--Web Development stack
--Learn how to make iOS "tweaks" (see: Jailbreak, Objective-C)
--Work on open source/bigger projects
--AI/Machine Learning
-
-
-
-#DF8598

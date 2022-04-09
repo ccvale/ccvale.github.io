@@ -1,5 +1,0 @@
-- Color palatte
-- File structure
-- Make star animate on hover
-- Languages: Python, R, C++, C, HTML/CSS, Javascript
-- Make interactive if not done (on hover, etc)

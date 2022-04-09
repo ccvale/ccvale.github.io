@@ -27,13 +27,15 @@ html, body {
 header {
     border-bottom: 1px solid rgb(58,58,60);
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
-a.about {
-    align-items: baseline;
+.about {
+    color: gainsboro;
+    font-size: .85rem;
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
 }
 
 .title {
@@ -43,8 +45,12 @@ a.about {
     text-align: center;
 }
 
-a.contact {
-    align-items: baseline;
+.contact {
+    color: gainsboro;
+    font-size: .85rem;
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
+
 }
 
 
@@ -76,10 +82,6 @@ a.contact {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.square:hover {
-    transform: translateY(-10px);
 }
 
 #keyboard-container {

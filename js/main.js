@@ -65,13 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
             square.classList.add('animate__animated'); 
             square.setAttribute('id', index + 1);
             
-            //square.classList.add('animate__flipInX');
             gameBoard.appendChild(square);
             setTimeout(() => {
                 square.textContent = chars[index];
                 square.classList.add('animate__flipInX');
                 square.style = `background-color:${tileColor};border-color:${tileColor}`;
-            }, 200 * index + 200);
+            }, 200 * index + 400);
         }
     }
 });

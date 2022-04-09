@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const availableSpaceEl = document.getElementById(String(availableSpace));
             availableSpace = availableSpace + 1;
-
             availableSpaceEl.textContent = letter;
         }
     };
@@ -162,12 +161,14 @@ document.addEventListener('DOMContentLoaded', () => {
         //make sure you cant delete things already typed
         const currentWordArr = getCurrentWordArray();
         const removedLetter = currentWordArr.pop();
+        if (currentWordArr.length) {
+            guessedWords[guessedWords.length - 1] = currentWordArr;
 
-        guessedWords[guessedWords.length - 1] = currentWordArr;
-
-        const lastLetterEl = document.getElementById(String(availableSpace-1));
-        lastLetterEl.textContent = '';
-        availableSpace -= 1;
+            const lastLetterEl = document.getElementById(String(availableSpace-1));
+            lastLetterEl.textContent = '';
+            availableSpace -= 1;
+        }
+        
     }
 
     for (let i = 0; i < keys.length; i++) {

@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function getTileColor(letter, index) {
-        let word = 'HIRED.';
+        let word = 'HIRED✓';
         index = index % 6;
         const isCorrectLetter = word.includes(letter);
         
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     'W', 'R', 'I', 'T', 'E', 'R',
                     'S', 'P', 'O', 'R', 'T', 'S',
                     'D', 'R', 'I', 'V', 'E', 'N',
-                    'H', 'I', 'R', 'E', 'D', '.'
+                    'H', 'I', 'R', 'E', 'D', '✓'
                     ]
         const gameBoard = document.getElementById('board');
         

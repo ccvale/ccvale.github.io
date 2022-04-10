@@ -36,6 +36,7 @@ header {
     font-size: .85rem;
     margin: 0.4rem 0 0.4rem 0;
     text-align: center;
+    user-select: none;
 }
 
 .title {
@@ -43,6 +44,7 @@ header {
     font-size: 2.5rem;
     margin: 0.4rem 0 0.4rem 0;
     text-align: center;
+    user-select: none;
 }
 
 .contact {
@@ -50,7 +52,7 @@ header {
     font-size: .85rem;
     margin: 0.4rem 0 0.4rem 0;
     text-align: center;
-
+    user-select: none;
 }
 
 
@@ -134,4 +136,22 @@ header {
 
 .spacer-half {
     flex-grow: 0.5;
+}
+
+#greeting {
+    color: gainsboro;
+    border: 0;
+    padding: 10px;
+    flex-grow: 1;
+    user-select: none;
+    text-align: left;
+}
+
+p {
+    color: gainsboro;
+    border: 0;
+    padding: 0;
+    flex-grow: 1;
+    user-select: none;
+    text-align: left;
 }

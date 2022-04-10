@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let hinted = false;
     let clicked = 0;
     for (let i = 0; i < keys.length; i++) {
+        
         keys[i].onclick = ({ target }) => {
             const letter = target.getAttribute('data-key');
             if (!hinted) {
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function getTileColor(letter, index) {
-        let word = 'HIRED✓';
+        let word = 'hired✓';
         index = index % 6;
         const isCorrectLetter = word.includes(letter);
         
@@ -56,13 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createSquares() {
         let chars = [
-                    'L', 'E', 'A', 'D', 'E', 'R',
-                    'A', 'C', 'T', 'I', 'V', 'E',
-                    'D', 'R', 'I', 'V', 'E', 'N',
-                    'T', 'E', 'C', 'H', 'I', 'E',
-                    'W', 'R', 'I', 'T', 'E', 'R',
-                    'H', 'I', 'R', 'E', 'D', '✓'
+                    'l', 'e', 'a', 'd', 'e', 'r',
+                    'a', 'c', 't', 'i', 'v', 'e',
+                    'd', 'r', 'i', 'v', 'e', 'n',
+                    't', 'e', 'c', 'h', 'i', 'e',
+                    'w', 'r', 'i', 't', 'e', 'r',
+                    'h', 'i', 'r', 'e', 'd', '✓'
                     ]
+        let set = new Set(chars);
         const gameBoard = document.getElementById('board');
         
         for (let index = 0; index < 36; index++) {
@@ -74,8 +76,20 @@ document.addEventListener('DOMContentLoaded', () => {
             square.setAttribute('id', index + 1);
             
             gameBoard.appendChild(square);
+
+            if (set.has(chars[index])) {
+                try {
+                    squareID = document.getElementById(chars[index]);
+                    squareID.classList.add('seen');
+                } catch (error) {
+                    console.log('who cares lol')
+                }
+                
+            }
+
             setTimeout(() => {
                 square.textContent = chars[index];
+
                 square.classList.add('animate__flipInX');
                 square.style = `background-color:${tileColor};border-color:${tileColor}`;
             }, 200 * index + 300);

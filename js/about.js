@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const greeting = document.getElementById('greeting'); 
     function changeGreeting() {
-        console.log(greeting);
         greeting.textContent = greetings[Math.floor(Math.random()*greetings.length)];
     }
 

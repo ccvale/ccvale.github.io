@@ -6,10 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const keys = document.querySelectorAll('.keyboard-row button');
     const squares = document.querySelectorAll('square animate__animated');
     
+    let hinted = false;
     let clicked = 0;
     for (let i = 0; i < keys.length; i++) {
         keys[i].onclick = ({ target }) => {
             const letter = target.getAttribute('data-key');
+            if (!hinted) {
+                window.alert(`Click the ENTER button 5 times for a surprise...`);
+                hinted = true;
+                if (letter === 'enter') {
+                    clicked = -1;
+                }
+            }
 
             if (letter === 'enter') {
                 clicked++;

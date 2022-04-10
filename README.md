@@ -13,6 +13,10 @@
 
 - <del>Add hook to Valdle game if user hits enter 5 times (tell visitor on about page)</del>
 
-- Add `About` page, consisting of school stuff and projects; the true portfolio aspect
+- <del>Add `About` page, consisting of school stuff and projects; the true portfolio aspect<del>
 
 - Add `Contact` page (not sure what this should exactly consist of yet)
+
+- Slight page animations when going from page to page
+
+- Fix the bugs on Valdle and make it actually playable

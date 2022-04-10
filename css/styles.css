@@ -142,7 +142,8 @@ header {
     color: gainsboro;
     border: 0;
     padding: 10px;
-    flex-grow: 1;
+    padding-bottom: 0px;
+    flex-grow: .5;
     user-select: none;
     text-align: left;
 }

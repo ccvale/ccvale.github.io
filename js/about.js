@@ -14,7 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
         'Hallo!',
         'Bonjour!',
         'Hola!',
-        'Xin chào!'
+        'Xin chào!',
+        'Ciao!',
+        'Szia!',
+        'Namaste!',
+        'Cześć!',
+        'Kon\'nichiwa!',
+        'Nǐ hǎo!',
+        'Hyālō!',
+        'Annyeong haseyo!'
     ]
 
     const greeting = document.getElementById('greeting'); 

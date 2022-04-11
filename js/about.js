@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'Namaste!',
         'Cześć!',
         'Kon\'nichiwa!',
-        'Nǐ hǎo!',
         'Hyālō!',
         'Annyeong haseyo!'
     ];

@@ -112,3 +112,10 @@ header {
 .spacer-half {
     flex-grow: 0.5;
 }
+
+@font-face {
+    font-family: 'Lucida Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lucida Sans Regular'), url('LSANS.woff') format('woff');
+}

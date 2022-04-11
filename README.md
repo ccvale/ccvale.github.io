@@ -15,8 +15,8 @@
 
 - <del>Add `About` page, consisting of school stuff and projects; the true portfolio aspect<del>
 
-- Add `Contact` page (not sure what this should exactly consist of yet)
+- <del>Add `Contact` page (not sure what this should exactly consist of yet)<del>
 
 - Slight page animations when going from page to page
 
-- Fix the bugs on Valdle and make it actually playable
+- <del>Fix the bugs on Valdle and make it actually playable<del>

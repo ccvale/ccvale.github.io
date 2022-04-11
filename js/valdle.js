@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const availableSpaceEl = document.getElementById(String(availableSpace));
             availableSpace = availableSpace + 1;
+
             availableSpaceEl.textContent = letter;
         }
     };
@@ -88,19 +89,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (currentWordArr.length !== 5) {
             window.alert('Word must be 5 letters!');
-            
+            return;
         }
 
         const currentWord = currentWordArr.join('');
 
         fetch(`https://wordsapiv1.p.rapidapi.com/words/${currentWord}`, {
-      method: "GET",
-      headers: {
+        method: "GET",
+         headers: {
         "x-rapidapi-host": "wordsapiv1.p.rapidapi.com",
         "x-rapidapi-key": "a17c43929bmsh5f47e5be9a81183p11b0a9jsn89ff621f42f4",
-      },
-    })
-      .then((res) => {
+        },
+        })
+        .then((res) => {
         if (!res.ok) {
           throw Error();
         }
@@ -108,9 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const firstLetterID = attempts * 5 + 1;
         const interval = 200;
         currentWordArr.forEach((letter, index) => {
+            guessedLetters.push(letter);
             setTimeout(() => {
                 const tileColor = getTileColor(letter, index);
-
                 const letterID = firstLetterID + index;
                 const letterEl = document.getElementById(letterID);
                 letterEl.classList.add('animate__flipInX');
@@ -119,12 +120,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if(guessedWords.length === 6) {
-            window.alert(`Sorry, no more guesses! The word was ${word}!`)
+            window.alert(`Sorry, no more guesses! The word was ${word}!`);
+            return;
         }
 
         guessedLetters.forEach((letter) => {
             setTimeout(() => {
-                const letterEl = document.getElementsByClassName('keyboard-container');
+                const letterEl = document.getElementById(letter);
                 console.log(letterEl);
                 letterEl.style = 'background-color:rgb(58,58,60);border-color:rgb(58,58,60)'
             }, interval);
@@ -133,14 +135,13 @@ document.addEventListener('DOMContentLoaded', () => {
         attempts += 1;
         guessedWords.push([]);
         if(currentWord === word) {
-            window.alert(`Wordle completed in ${attempts} attempts!`)
+            window.alert(`Wordle completed in ${attempts} attempts!`);
+            return;
         }
-
-        
-         
     }).
     catch(() => {
-        window.alert('Word is not recognized!')
+        window.alert('Word is not recognized!');
+        return;
     });
 }
 
@@ -160,27 +161,27 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleDelete() {
         //make sure you cant delete things already typed
         const currentWordArr = getCurrentWordArray();
-        const removedLetter = currentWordArr.pop();
-        if (currentWordArr.length) {
+
+        if (currentWordArr.length !== 0) {
+            const removedLetter = currentWordArr.pop();
             guessedWords[guessedWords.length - 1] = currentWordArr;
 
             const lastLetterEl = document.getElementById(String(availableSpace-1));
             lastLetterEl.textContent = '';
             availableSpace -= 1;
         }
-        
     }
 
     for (let i = 0; i < keys.length; i++) {
         keys[i].onclick = ({ target }) => {
-            const letter = target.getAttribute('data-key');
+            const letter = keys[i].textContent;
 
-            if (letter === 'enter') {
+            if (letter === 'Enter') {
                 handleSubmit();
                 return;
             }
 
-            if (letter === 'del') {
+            if (letter === 'Del') {
                 handleDelete();
                 return;
             }

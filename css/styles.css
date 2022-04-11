@@ -5,7 +5,7 @@
 
 html, body {
     height: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande'
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
 }
 
 #container {
@@ -141,9 +141,9 @@ header {
 #greeting {
     color: gainsboro;
     border: 0;
-    padding: 10px;
-    padding-bottom: 0px;
-    flex-grow: .5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-grow: 0.1;
     user-select: none;
     text-align: left;
 }
@@ -155,4 +155,56 @@ p {
     flex-grow: 1;
     user-select: none;
     text-align: left;
+    font-size: 15px;
+}
+
+.resume {
+    color: gainsboro;
+    font-size: 15px;
+    margin-top: 30px;
+    user-select: none;
+}
+
+.github, .email, .phone {
+    color: gainsboro;
+    font-size: 15px;
+    user-select: none;
+}
+
+.resume-icon {
+    position: relative;
+    top: -30px;
+    display: inline-flex;
+    margin: 0 230px;
+    margin-left: 220px;
+    user-select: none;
+    padding-bottom: 0px;
+}
+
+.github-icon {
+    position: relative;
+    display: inline-flex;
+    top: -30px;
+    margin: 0 230px;
+    margin-left: 160px;
+    user-select: none;
+}
+
+.email-icon {
+    position: relative;
+    display: inline-flex;
+    top: -30px;
+    margin: 0 230px;
+    margin-left: 170px;
+    user-select: none;
+}
+
+.phone-icon {
+    position: relative;
+    display: inline-flex;
+    top: -30px;
+    margin: 0 230px;
+    margin-top: 0px;
+    margin-left: 130px;
+    user-select: none;
 }

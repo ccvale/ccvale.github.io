@@ -1,32 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    //TODO: make keyboard usable
-
     createSquares();
     const keys = document.querySelectorAll('.keyboard-row button');
-    const squares = document.querySelectorAll('square animate__animated');
     
     let hinted = false;
     let clicked = 0;
     for (let i = 0; i < keys.length; i++) {
-        
-        keys[i].onclick = ({ target }) => {
-            const letter = target.getAttribute('data-key');
+        keys[i].onclick = () => {
+            
             if (!hinted) {
                 window.alert(`Click the ENTER button 5 times for a surprise...`);
                 hinted = true;
-                if (letter === 'enter') {
+                if (keys[i].textContent === 'Enter') {
                     clicked = -1;
                 }
             }
 
-            if (letter === 'enter') {
+            if (keys[i].textContent === 'Enter') {
                 clicked++;
-                console.log(clicked);
                 if (clicked == 5) {
                     window.location.href = "/valdle/valdle.html";
                     window.alert(`Congratulations! You have found my secret (sorta) Wordle Clone! The orange tiles in my version indicate double letters...It was the only change I wanted to add on to the fundamentals of the game! You can click on VALDLE to return back to the main page at any time! Enjoy!`);
-
                 }
             }
         }
@@ -41,9 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             //gray it out
             return 'rgb(58,58,60)';
         }
-
         const correctPosition = letter === word.charAt(index);
-
 
         if(correctPosition) {
             //green
@@ -81,15 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     squareID = document.getElementById(chars[index]);
                     squareID.classList.add('seen');
-                } catch (error) {
-                    console.log('who cares lol')
                 }
-                
+                catch (error) {}   
             }
 
             setTimeout(() => {
                 square.textContent = chars[index];
-
                 square.classList.add('animate__flipInX');
                 square.style = `background-color:${tileColor};border-color:${tileColor}`;
             }, 200 * index + 300);

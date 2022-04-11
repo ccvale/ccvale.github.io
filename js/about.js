@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     
     const greetings = [
         'Hi!',
@@ -23,10 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'Nǐ hǎo!',
         'Hyālō!',
         'Annyeong haseyo!'
-    ]
+    ];
 
     const greeting = document.getElementById('greeting'); 
     function changeGreeting() {
+        //get random greeting
         greeting.textContent = greetings[Math.floor(Math.random()*greetings.length)];
     }
 

@@ -1,17 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    
     const greetings = [
         'Get to know me!',
-        'Send me an email!',
         'Reach out!',
         'Come find me!',
-        
+        'Let\'s get acquainted!',
+        'Get familiar!',
+        'Contact me!',
+        'Send a message!'
     ]
 
     const greeting = document.getElementById('greeting'); 
     function changeGreeting() {
-        greeting.textContent = greetings[Math.floor(Math.random()*greetings.length)];
+        //get random greeting
+        let random = Math.floor(Math.random()*greetings.length);
+        greeting.textContent = greetings[random];
     }
 
     setInterval(() => {

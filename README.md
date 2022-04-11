@@ -1,4 +1,4 @@
-# cval.io (WIP)
+# cval.io
 
 ## What is it?
 - [cval.io](https://cval.io) is my first foray into the "personal project via the means of a resume/portfolio site" space
@@ -20,3 +20,7 @@
 - Slight page animations when going from page to page
 
 - <del>Fix the bugs on Valdle and make it actually playable<del>
+
+- Fix the font problem on non Mac devices
+
+- Fix the mobile version stretching and unintended formatting

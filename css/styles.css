@@ -5,6 +5,10 @@
 
 html, body {
     height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     font-family: 'Lucida Grande', 'Open Sans', 'Lucida Sans Regular';
 }
 
@@ -207,6 +211,7 @@ p {
     margin-top: 0px;
     margin-left: 130px;
     user-select: none;
+    
 }
 
 /* 

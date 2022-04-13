@@ -102,7 +102,7 @@ header {
     touch-action: manipulation;
 }
 
-.keyboard-row button.seen {
+.keyboard-row button.seen-null {
     font-family: inherit;
     font-weight: bold;
     border: 0;
@@ -110,6 +110,22 @@ header {
     height: 60px;
     cursor: pointer;
     background-color: rgb(58,58,60);
+    color: rgb(215, 218, 220);
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.keyboard-row button.seen-found {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(83, 141, 78);
     color: rgb(215, 218, 220);
     flex-grow: 1;
     text-transform: uppercase;

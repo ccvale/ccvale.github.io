@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    createSquares();
-    const keys = document.querySelectorAll('.keyboard-row button');
-    
+    const word = 'hired✓';
     let hinted = false;
     let clicked = 0;
+    const keys = document.querySelectorAll('.keyboard-row button');
+    
     for (let i = 0; i < keys.length; i++) {
         keys[i].onclick = () => {
             
@@ -27,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function getTileColor(letter, index) {
-        let word = 'hired✓';
         index = index % 6;
         const isCorrectLetter = word.includes(letter);
         
@@ -69,19 +67,24 @@ document.addEventListener('DOMContentLoaded', () => {
             
             gameBoard.appendChild(square);
 
-            if (set.has(chars[index])) {
-                try {
-                    squareID = document.getElementById(chars[index]);
-                    squareID.classList.add('seen');
-                }
-                catch (error) {}   
-            }
-
             setTimeout(() => {
                 square.textContent = chars[index];
                 square.classList.add('animate__flipInX');
                 square.style = `background-color:${tileColor};border-color:${tileColor}`;
+                if (set.has(chars[index])) {
+                    try {
+                        let squareID = document.getElementById(chars[index]);
+                        if (word.includes(squareID.textContent)) {
+                            squareID.classList.add('seen-found');
+                        }
+                        squareID.classList.add('seen-null');
+                    }
+                    catch (error) {
+                        
+                    }   
+                }
             }, 200 * index + 300);
         }
     }
+    createSquares();
 });

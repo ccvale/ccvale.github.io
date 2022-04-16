@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(correctPosition) {
             return 'rgb(83, 141, 78)';
         }
-        else if(!correctPosition && isDoubleLetter && !foundDoubleLetter) {
+        else if(!correctPosition && isDoubleLetter && !foundDoubleLetter && guess) {
             return 'rgb(218,130,46)';
         }
         else {

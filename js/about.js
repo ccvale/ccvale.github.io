@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
     const greetings = [
         'Hi!',
         'Hej!',

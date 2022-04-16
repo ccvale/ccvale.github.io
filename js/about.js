@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       const page = document.getElementById('about');
+       page.style.height = 'auto';
+    }
+
     const greetings = [
         'Hi!',
         'Hej!',

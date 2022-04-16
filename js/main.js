@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       const grid = document.getElementById('board');
+       // shrink the grid on smaller devices
+    }
+
     const word = 'hired✓';
     let hinted = false;
     let clicked = 0;

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
     //TODO: make keyboard usable
 
     createSquares();

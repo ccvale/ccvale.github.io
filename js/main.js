@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-       const grid = document.getElementById('board');
-       // shrink the grid on smaller devices
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log('hello!!!!');
+        const grid = document.getElementById('board-container');
+        
     }
 
     const word = 'hired✓';

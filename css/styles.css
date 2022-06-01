@@ -51,6 +51,10 @@ header {
     user-select: none;
 }
 
+.introduction {
+    overflow: scroll;
+}
+
 .contact {
     color: gainsboro;
     font-size: .85rem;

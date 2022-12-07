@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
           })
           .then((res) => {
-            word = res.word;
+              word = res.word;
+              console.log(word);
           })
           .catch((err) => {
             console.error(err);
@@ -63,23 +64,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const isCorrectLetter = word.includes(letter);
         const isDoubleLetter = countInstances(letter, word);
 
+
         guessedLetters.push(letter);
 
-        if(!isCorrectLetter && !isDoubleLetter) {
+        if (!isCorrectLetter && !isDoubleLetter) {
+            // fully incorrect letter
             return 'rgb(58,58,60)';
         }
 
         const letterPosition = word.charAt(index);
         const correctPosition = letter === letterPosition;
 
-        if(correctPosition) {
+        if (correctPosition) {
+            //correct position
+            if (isDoubleLetter) {
+                foundDoubleLetter = true;
+            }
             return 'rgb(83, 141, 78)';
         }
-        else if(!correctPosition && isDoubleLetter && !foundDoubleLetter && guess) {
+        else if (!correctPosition && isDoubleLetter && !foundDoubleLetter) {
+            foundDoubleLetter
             return 'rgb(218,130,46)';
         }
         else {
-            return 'rgb(181, 159, 59)'
+            return 'rgb(181, 159, 59)';
         }
     }
 
@@ -128,7 +136,12 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 const letterEl = document.getElementById(letter);
                 console.log(letterEl);
-                letterEl.style = 'background-color:rgb(58,58,60);border-color:rgb(58,58,60)'
+                if (word.includes(letter)) {
+                    letterEl.style = 'background-color:rgb(58,58,60);border-color:rgb(58,58,60)'
+                }
+                else {
+                    letterEl.style = 'background-color:rgb(83, 141, 78);border-color:rgb(83, 141, 78)'
+                }
             }, interval);
         });
 

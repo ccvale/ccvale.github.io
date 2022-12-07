@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Let\'s get acquainted!',
         'Get familiar!',
         'Contact me!',
-        'Send a message!'
+        'Send a message!',
+        'Send me an email!'
     ]
 
     const greeting = document.getElementById('greeting'); 

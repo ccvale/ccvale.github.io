@@ -27,7 +27,6 @@ html, body {
     display: flex;
     flex-direction: column;
     position: fixed;
-    overflow-y: scroll;
 }
 
 header {

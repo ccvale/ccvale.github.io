@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'Reach out!',
         'Come find me!',
         'Let\'s get acquainted!',
-        'Get familiar!',
         'Contact me!',
         'Send a message!',
         'Send me an email!'

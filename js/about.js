@@ -25,7 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'Cześć!',
         'Kon\'nichiwa!',
         'Hyālō!',
-        'Annyeong haseyo!'
+        'Annyeong haseyo!',
+        'Salve!',
+        'Salut!',
+        'Olá!',
+        'Asalaam alaikum!'
     ];
 
     const greeting = document.getElementById('greeting'); 

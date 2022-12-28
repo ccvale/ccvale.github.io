@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         const grid = document.getElementById('board-container');
-        
     }
 
     const word = 'hired✓';

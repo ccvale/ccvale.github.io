@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
           .catch((err) => {
             console.error(err);
           });
-      }
+    }
+    console.log(word);
 
     function getCurrentWordArray() {
         const numGuessedWords = guessedWords.length;
@@ -83,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return 'rgb(83, 141, 78)';
         }
         else if (!correctPosition && isDoubleLetter && !foundDoubleLetter) {
-            foundDoubleLetter
+            foundDoubleLetter = true;
             return 'rgb(218,130,46)';
         }
         else {
@@ -132,16 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        guessedLetters.forEach((letter) => {
+        guessedLetters.forEach((letter, index) => {
             setTimeout(() => {
+                const tileColor = getTileColor(letter, index);
                 const letterEl = document.getElementById(letter);
                 console.log(letterEl);
-                if (word.includes(letter)) {
-                    letterEl.style = 'background-color:rgb(58,58,60);border-color:rgb(58,58,60)'
-                }
-                else {
-                    letterEl.style = 'background-color:rgb(83, 141, 78);border-color:rgb(83, 141, 78)'
-                }
+                letterEl.style = `background-color:${tileColor};border-color:${tileColor}`
             }, interval);
         });
 

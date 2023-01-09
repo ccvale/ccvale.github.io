@@ -19,6 +19,10 @@ def contact():
 def valdle():
     return render_template('valdle.html')
 
+@app.route('/chat')
+def chat():
+    return render_template('chat.html')
+
 
 
 if __name__ == '__main__':

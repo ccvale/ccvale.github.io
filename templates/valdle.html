@@ -8,30 +8,22 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
     </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap');
-    </style>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link 
+<script src="{{ url_for('static', filename='js/valdle.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/valdle.css') }}" />
+    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <link rel='icon' href='assets/star.ico'/>
+    <link rel='shortcut icon' href='/assets/star.ico'/>
 </head>
     <body>
         <div id="container">
             <div id="game">
                 <header>
-                    <a href="/about.html" style="text-decoration: none;">
-                        <h1 class="about">ABOUT</h1>
-                    </a>
-                    <a href="/index.html" style="text-decoration: none;">
-                        <h1 class="title">CHRIS VALENTE</h1>
-                    </a>
-                    <a href="/contact.html" style="text-decoration: none;">
-                        <h1 class="contact">CONTACT</h1>
+                    <a href="{{ url_for('index') }}" style="text-decoration: none;">
+                        <h1 class="title">VALDLE</h1>
+                        <h3 class="subtitle" style="text-decoration: none;">BY CHRIS VALENTE</h3>
                     </a>
                 </header>
                 <div id="board-container">
@@ -71,7 +63,7 @@
                         <button id="v">v</button>
                         <button id="b">b</button>
                         <button id="n">n</button>
-                        <button id="m" >m</button>
+                        <button id="m">m</button>
                         <button id="del" class="wide-button">Del</button>
                     </div>
                 </div>

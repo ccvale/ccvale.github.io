@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (keys[i].textContent === 'Enter') {
                 clicked++;
                 if (clicked == 5) {
-                    window.location.href = "/valdle/valdle.html";
+                    window.location.href = "../../templates/valdle.html"; //figure this out
                     window.alert(`Congratulations! You have found my secret version of Wordle! The orange tiles in my version indicate double letters...It was the only change I wanted to add on to the fundamentals of the game! You can click on VALDLE to return back to the main page at any time! Enjoy!`);
                 }
             }

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const grid = document.getElementById('board-container');
     }
 
-    const word = 'hired✓';
+    const word = 'chris✓';
     let hinted = false;
     let clicked = 0;
     const keys = document.querySelectorAll('.keyboard-row button');
@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     'a', 'c', 't', 'i', 'v', 'e',
                     'd', 'r', 'i', 'v', 'e', 'n',
                     't', 'e', 'c', 'h', 'i', 'e',
-                    'w', 'r', 'i', 't', 'e', 'r',
-                    'h', 'i', 'r', 'e', 'd', '✓'
+                    'p', 'r', 'o', 'm', 'p', 't',
+                    'c', 'h', 'r', 'i', 's', '✓'
                     ]
         let set = new Set(chars);
         const gameBoard = document.getElementById('board');

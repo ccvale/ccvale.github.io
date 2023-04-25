@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     'l', 'e', 'a', 'd', 'e', 'r',
                     'a', 'c', 't', 'i', 'v', 'e',
                     'd', 'r', 'i', 'v', 'e', 'n',
+                    'a', 's', 't', 'u', 't', 'e',
                     't', 'e', 'c', 'h', 'i', 'e',
-                    'p', 'r', 'o', 'm', 'p', 't',
                     'c', 'h', 'r', 'i', 's', '✓'
                     ]
         let set = new Set(chars);
